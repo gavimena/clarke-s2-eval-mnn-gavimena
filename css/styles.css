@@ -54,5 +54,6 @@ input, button {
 
 #text-suggestion {
   border: solid 1px blue;
-  padding: 3% 20%;
+  padding: 1% 20%;
+  color: blue;
 }
