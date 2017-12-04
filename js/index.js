@@ -10,6 +10,9 @@ var numToGuess = getRandomInt(1, 101);
 console.log(numToGuess);
 var textSug = document.getElementById('text-suggestion');
 var buttonCompare = document.getElementById('button-try');
+var tries = document.getElementById('tries-number');
+var count = 0;
+
 buttonCompare.addEventListener('click', function () {
   var numTaken = parseInt(document.getElementById('take-number').value);
   if(numTaken === numToGuess) {
@@ -19,4 +22,6 @@ buttonCompare.addEventListener('click', function () {
   } else {
     textSug.innerHTML = 'El número es muy alto';
   }
+  count += 1;
+  tries.innerHTML = count;
 });
