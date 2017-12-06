@@ -15,6 +15,7 @@ var count = 0;
 
 buttonCompare.addEventListener('click', function () {
   var numTaken = parseInt(document.getElementById('take-number').value);
+
   if(numTaken === numToGuess) {
     textSug.innerHTML = 'Has acertado';
   } else if (numTaken < numToGuess) {
