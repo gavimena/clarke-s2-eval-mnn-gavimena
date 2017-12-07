@@ -59,6 +59,8 @@ p {
 
 #tries-number {
   color: red;
+  font-size: 2.5em;
+  padding-left: 20%;
 }
 
 #text-suggestion {
@@ -70,6 +72,10 @@ p {
 
 #take-name {
   margin-right: 1%;
+}
+
+#history-names {
+  margin-top: 2%;
 }
 
 @media all and (max-width: 900px) {
@@ -97,5 +103,10 @@ p {
 
   input, button {
     width: 30%;
+  }
+
+  #tries-number {
+    font-size: 2em;
+    padding-left: 5%;
   }
 }

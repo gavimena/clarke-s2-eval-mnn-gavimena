@@ -53,5 +53,6 @@ function reset() {
   numTaken.value = '';
   nameTaken.value = '';
   nameAndSave.style.display = 'none';
+
   numToGuess = getRandomInt(1, 101);
 }
