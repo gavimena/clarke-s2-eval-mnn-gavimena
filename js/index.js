@@ -21,12 +21,16 @@ var count = 0;
 buttonCompare.addEventListener('click', function() {
   var numTakenValue = parseInt(numTaken.value);
 
-  if(numTakenValue === numToGuess) {
+  if (numTakenValue < 0 || numTakenValue > 100) {
+    alert('Inserta un número entre 1 y 100');
+  }else if (isNaN(numTakenValue)) {
+    alert('Solo acepta números');
+  }else if (numTakenValue === numToGuess) {
     textSug.innerHTML = 'Has acertado';
     nameAndSave.style.display = 'flex';
-  } else if (numTakenValue < numToGuess) {
+  }else if (numTakenValue < numToGuess) {
     textSug.innerHTML = 'El número es muy bajo';
-  } else {
+  }else {
     textSug.innerHTML = 'El número es muy alto';
   }
   count += 1;
@@ -51,8 +55,7 @@ function saveName() {
 
   arrNamesScore.push(saves);
   for (var i = 0; i < arrNamesScore.length; i++) {
-    scorelist += '<li>' + arrNamesScore[i].name + ' ' +
-    arrNamesScore[i].score + ' intentos' + '</li>';
+    scorelist += '<li>' + arrNamesScore[i].name + ' ' + arrNamesScore[i].score + ' intentos' + '</li>';
   }
   listNames.innerHTML = scorelist;
 }

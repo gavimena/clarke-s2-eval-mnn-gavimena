@@ -14,17 +14,17 @@ input, button {
   margin-bottom: 2em;
   border: solid 1px;
 }
-
-p {
-  padding-bottom: 3%;
-}
-
 h1 {
   text-align: center;
 }
+p {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 3%;
+}
 
 li {
-  margin-bottom: 2%; 
+  margin-bottom: 3%;
 }
 
 .container {
@@ -32,15 +32,15 @@ li {
   justify-content: space-between;
   width: 100%;
   height: 100vh;
-  /*background: url(../images/numbers.png);*/
-  background-size: cover;
+  background: url(../images/numbers.png);
+  background-size: contain;
 }
 
 .numbers {
   display: flex;
   flex-direction: column;
   width: 70%;
-  border-right: solid black 1px;
+  border-right: dotted black 4px;
   align-items: center;
   padding-top: 5%;
 
@@ -55,10 +55,12 @@ li {
 }
 
 .head {
-  display: flex;
-  padding-bottom: 10%;
   width: inherit;
+  display: flex;
   justify-content: center;
+  padding-bottom: 10%;
+
+
 }
 
 .save {
@@ -74,7 +76,7 @@ li {
 }
 
 #text-suggestion {
-  border: solid 1px blue;
+  border: solid 2px blue;
   padding: 1% 20%;
   margin-top: 10%;
   color: blue;
@@ -97,7 +99,7 @@ li {
   .numbers {
     width: 100%;
     border-right: none;
-    border-bottom: solid black 1px;
+    border-bottom: dotted black 4px;
     height: 65%;
   }
 
@@ -116,7 +118,7 @@ li {
   }
 
   #tries-number {
-    font-size: 2em;
+    font-size: 3em;
     padding-left: 5%;
   }
 }
