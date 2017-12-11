@@ -15,7 +15,7 @@ var tries = document.getElementById('tries-number');
 var nameAndSave = document.querySelector('.save');
 var numTaken = document.getElementById('take-number');
 var nameTaken = document.getElementById('take-name');
-
+var arrNamesScore = [];
 var count = 0;
 
 buttonCompare.addEventListener('click', function() {
@@ -43,8 +43,18 @@ function clickSave(event){
 function saveName() {
   var nameTakenValue = (nameTaken.value);
   var listNames = document.getElementById('history-names');
+  var scorelist = '';
+  var saves = {
+    name: nameTakenValue,
+    score: count
+  };
 
-  listNames.innerHTML += '<li>' + nameTakenValue + ' ' + count + ' ' + 'intentos' + '</li>';
+  arrNamesScore.push(saves);
+  for (var i = 0; i < arrNamesScore.length; i++) {
+    scorelist += '<li>' + arrNamesScore[i].name + ' ' +
+    arrNamesScore[i].score + ' intentos' + '</li>';
+  }
+  listNames.innerHTML = scorelist;
 }
 
 function reset() {
