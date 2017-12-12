@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: 'Arial';
+  font-family: 'Lato', 'Arial';
+  font-size: 1.3em;
 }
 
 input, button {
@@ -14,9 +15,7 @@ input, button {
   margin-bottom: 2em;
   border: solid 1px;
 }
-h1 {
-  text-align: center;
-}
+
 p {
   text-align: center;
   font-weight: bold;
@@ -25,6 +24,10 @@ p {
 
 li {
   margin-bottom: 3%;
+}
+
+h1 {
+  text-align: center;
 }
 
 .container {
@@ -59,8 +62,6 @@ li {
   display: flex;
   justify-content: center;
   padding-bottom: 10%;
-
-
 }
 
 .save {
