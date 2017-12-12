@@ -73,7 +73,7 @@ h1 {
 #tries-number {
   color: red;
   font-size: 3em;
-  padding-left: 20%;
+  padding-left: 10%;
 }
 
 #text-suggestion {
@@ -92,6 +92,10 @@ h1 {
 }
 
 @media all and (max-width: 900px) {
+
+  body {
+    font-size: 1em;
+  }
 
   .container {
     flex-direction: column;
@@ -119,7 +123,8 @@ h1 {
   }
 
   #tries-number {
-    font-size: 3em;
-    padding-left: 5%;
+    font-size: 2.5em;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
