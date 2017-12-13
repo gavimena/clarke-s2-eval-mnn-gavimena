@@ -16,6 +16,8 @@ var nameAndSave = document.querySelector('.save');
 var numTaken = document.getElementById('take-number');
 var nameTaken = document.getElementById('take-name');
 var arrNamesScore = [];
+var nameSaved;
+
 var count = 0;
 
 buttonCompare.addEventListener('click', function() {
@@ -46,6 +48,7 @@ function clickSave(event){
 
 function saveName() {
   var nameTakenValue = (nameTaken.value);
+  nameSaved = nameTakenValue;
   var listNames = document.getElementById('history-names');
   var scorelist = '';
   var saves = {
@@ -64,7 +67,7 @@ function reset() {
   count = 0;
   tries.innerHTML = count;
   numTaken.value = '';
-  nameTaken.value = '';
+  // nameTaken.value = '';
   nameAndSave.style.display = 'none';
 
   numToGuess = getRandomInt(1, 101);
